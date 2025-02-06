@@ -1,0 +1,32 @@
+{
+  "name": "455id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=local.env -r ts-node/register src/exec/main.ts",
+    "build": "rm -rf ./dist && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^11.0.7",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/passport": "^11.0.5",
+    "@x1n13y84issmd42/455fw": "file:../fw",
+    "@x1n13y84issmd42/ass-shared": "^1.0.0",
+    "mongoose": "^8.9.6",
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/passport": "^1.0.17",
+    "@types/passport-facebook": "^3.0.3",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38"
+  }
+}

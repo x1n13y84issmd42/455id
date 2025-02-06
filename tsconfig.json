@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"module": "Node16",
+		"target": "ESNext",
+
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"sourceMap": true,
+
+		"moduleResolution": "NodeNext",
+		
+		"outDir": "./dist",
+		// "baseUrl": "./src",
+		"paths": {
+			// "@ctrl/Test.controller": ["src/controllers/Test.controller.ts"],
+		},
+		
+		"incremental": true,
+		"skipLibCheck": true,
+		"noImplicitAny": true,
+	}
+}
