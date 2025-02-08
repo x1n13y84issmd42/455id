@@ -10,9 +10,19 @@ export class CredsSource {
 	@Prop({required: true})
 	email: string;
 
-	// A password hash, mkay.
+	/**
+	 * Depending on the policy used,
+	 * this can be either plain password (don't do that, mkay)
+	 * or some hashed value.
+	 */
 	@Prop({required: true})
 	password: string;
+
+	/**
+	 * This controls how the system treats passwords.
+	 */
+	@Prop({required: true})
+	policy: string;
 }
 
 export class FacebookSource {

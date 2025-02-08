@@ -8,6 +8,11 @@ import { AuthController } from "./controllers/Auth.controller";
 import { CredsAuthController } from "./controllers/CredsAuth.controller";
 import { FacebookAuthController } from "./controllers/FacebookAuth.controller";
 import { DataModule } from "../Data";
+import { CredsAuthPlainPolicy } from "./services/CredsAuthPlain.policy";
+import { CredsAuthService } from "./services/CredsAuth.service";
+import { UserACLProviderDefault } from "./services/UserACLProvider.default";
+import { ICredsAuthPolicy } from "./services/CredsAuth.policy.interface";
+import { IUserACLProvider } from "./services/UserACLProvider.interface";
 
 @Module({
 	imports: [
@@ -29,6 +34,18 @@ import { DataModule } from "../Data";
 		CredsStrategy,
 		JWTStrategy,
 		FacebookStrategy,
+
+		CredsAuthService,
+
+		{
+			provide: ICredsAuthPolicy,
+			useClass: CredsAuthPlainPolicy,
+		},
+
+		{
+			provide: IUserACLProvider,
+			useClass: UserACLProviderDefault,
+		},
 	],
 })
 export class AuthModule {}
