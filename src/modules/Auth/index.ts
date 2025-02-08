@@ -13,6 +13,7 @@ import { CredsAuthService } from "./services/CredsAuth.service";
 import { UserACLProviderDefault } from "./services/UserACLProvider.default";
 import { ICredsAuthPolicy } from "./services/CredsAuth.policy.interface";
 import { IUserACLProvider } from "./services/UserACLProvider.interface";
+import { TokenService } from "./services/Token.service";
 
 @Module({
 	imports: [
@@ -36,6 +37,7 @@ import { IUserACLProvider } from "./services/UserACLProvider.interface";
 		FacebookStrategy,
 
 		CredsAuthService,
+		TokenService,
 
 		{
 			provide: ICredsAuthPolicy,
