@@ -2,6 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { PassportStrategy } from "@nestjs/passport";
 import { ExtractJwt, Strategy } from "passport-jwt";
 
+//TODO: move all JWT stuff to 455fw so it's available for other services.
 @Injectable()
 export class JWTStrategy extends PassportStrategy(Strategy, '455jwt') {
 	constructor() {
