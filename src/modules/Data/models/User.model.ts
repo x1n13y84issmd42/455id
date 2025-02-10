@@ -1,5 +1,4 @@
-import { Prop, Schema, SchemaFactory } from "@x1n13y84issmd42/455fw";
-import { HydratedDocument } from "mongoose";
+import { Prop, Schema, SchemaFactory, HydratedDocument } from "@x1n13y84issmd42/455fw/mongoose";
 
 export enum UserSourceType {
 	Creds = "creds",

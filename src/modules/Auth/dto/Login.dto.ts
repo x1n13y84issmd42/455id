@@ -1,16 +1,12 @@
 import { IsEmail, IsString, Length } from "@x1n13y84issmd42/455fw/class-validator";
 
-export class CredsSignupDTO {
-	@IsString()
-	@Length(1, 100)
-	name: string;
-	
+export class CredsLoginDTO {
 	@IsString()
 	@Length(3, 1000)
 	@IsEmail()
 	email: string;
 	
 	@IsString()
-	@Length(1, 1000)
+	@Length(10, 100)
 	password: string;
 }

@@ -1,7 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { InjectModel } from "@x1n13y84issmd42/455fw";
+import { InjectModel, Model } from "@x1n13y84issmd42/455fw/mongoose";
 import { User } from "../models/User.model";
-import { Model } from "mongoose";
 import { UserNotFoundError } from "../errors/UerNotFound.error";
 
 @Injectable()
