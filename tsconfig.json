@@ -16,7 +16,7 @@
 		"outDir": "./dist",
 		// "baseUrl": "./src",
 		"paths": {
-			// "@ctrl/Test.controller": ["src/controllers/Test.controller.ts"],
+			"@@*": ["./src/modules/*"],
 		},
 		
 		"incremental": true,

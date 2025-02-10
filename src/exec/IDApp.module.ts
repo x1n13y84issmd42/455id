@@ -1,6 +1,6 @@
 import { MiddlewareConsumer, Module, NestModule } from "@nestjs/common";
 import { TestController } from "../controllers/Test.controller";
-import { AuthModule } from "../modules/Auth";
+import { AuthModule } from "@@Auth";
 import { ExceptionFiltersModule } from "@x1n13y84issmd42/455fw";
 
 @Module({
