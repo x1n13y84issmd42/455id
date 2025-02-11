@@ -1,7 +1,7 @@
 import { Module } from "@nestjs/common";
 import { PassportModule } from "@nestjs/passport";
 import { JwtModule } from "@nestjs/jwt";
-import { DataModule } from "@@Data";
+import { DataModule } from "../Data";
 import { CredsStrategy } from "./strategies/Creds/Strategy";
 import { JWTStrategy } from "./strategies/JWT/Strategy";
 import { FacebookStrategy } from "./strategies/Facebook/Strategy";
