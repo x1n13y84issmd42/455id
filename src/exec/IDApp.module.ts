@@ -1,4 +1,4 @@
-import { AuthModule } from "../modules/Auth";
+import { AuthModule } from "@@Auth";
 import { Module } from "@nestjs/common";
 import { ExceptionFiltersModule } from "@x1n13y84issmd42/455fw";
 

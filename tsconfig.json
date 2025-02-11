@@ -16,7 +16,7 @@
 		"outDir": "./dist",
 		// "baseUrl": "./src",
 		"paths": {
-			// "@@*": ["./src/modules/*"],
+			"@@*": ["./src/modules/*"],
 		},
 		
 		"incremental": true,
