@@ -1,5 +1,5 @@
 import { HydratedDocument } from "@x1n13y84issmd42/455fw/dist/rx/mongoose";
-import { Prop, Schema, SchemaFactory } from "@x1n13y84issmd42/455fw/dist/rx/nestjs-mongoose";
+import { Prop, Schema, SchemaFactory } from "@x1n13y84issmd42/455fw/dist/rx/nestjs_mongoose";
 
 export enum UserSourceType {
 	Creds = "creds",
