@@ -1,7 +1,8 @@
 {
 	"compilerOptions": {
-		"module": "NodeNext",
-		"target": "ESNext",
+		"target": "ES2024",
+		"module": "CommonJS",
+		// "moduleResolution": "",
 
 		"declaration": true,
 		"removeComments": true,
@@ -11,7 +12,6 @@
 		"forceConsistentCasingInFileNames": true,
 		"sourceMap": true,
 
-		"moduleResolution": "nodenext",
 		
 		"outDir": "./dist",
 		// "baseUrl": "./src",

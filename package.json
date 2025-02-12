@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --env-file=local.env dist/exec/main.js",
+    "start": "node --env-file=local.env dist/src/exec/main.js",
     "build": "rm -rf ./dist && nest build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --config test/.mocharc.json test/yolo.test.ts"
   },
   "author": "",
   "license": "ISC",
@@ -22,9 +22,13 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.10",
     "@types/passport": "^1.0.17",
     "@types/passport-facebook": "^3.0.3",
     "@types/passport-jwt": "^4.0.1",
-    "@types/passport-local": "^1.0.38"
+    "@types/passport-local": "^1.0.38",
+    "chai": "^4.5.0",
+    "mocha": "^11.1.0"
   }
 }

@@ -1,4 +1,4 @@
-import { IsEmail, IsString, Length } from "@x1n13y84issmd42/455fw/class-validator";
+import { IsEmail, IsString, Length } from "@x1n13y84issmd42/455fw/dist/rx/class-validator";
 
 export class CredsSignupDTO {
 	@IsString()

@@ -1,8 +1,8 @@
 import { AuthGuard } from "@nestjs/passport";
 import { ExecutionContext } from "@nestjs/common";
 import { Request } from "express";
-import { validateOrReject } from "@x1n13y84issmd42/455fw/class-validator";
-import { plainToInstance } from "@x1n13y84issmd42/455fw/class-transformer";
+import { validateOrReject } from "@x1n13y84issmd42/455fw/dist/rx/class-validator";
+import { plainToInstance } from "@x1n13y84issmd42/455fw/dist/rx/class-transformer";
 import { CredsLoginDTO } from "../../dto/Login.dto";
 import { ValidationError } from "@x1n13y84issmd42/455fw";
 
